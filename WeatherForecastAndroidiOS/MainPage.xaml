@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherForecastAndroidiOS.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                x:Name="MainImage"
+                Source="sun.png"
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                />
+
+            <Label
+                x:Name="MainLabel"
+                Text="Погода: "
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                x:Name="TempLabel"
+                Text="Температура: "
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Entry Placeholder="Введите ваш город"
+                x:Name="CityTextBox"
+                   HorizontalOptions="Center"
+                />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Готово"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
